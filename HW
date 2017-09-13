@@ -1,0 +1,5 @@
+1. Highlight your birthday
+2. Calculate # of Blanks
+3. Add twospace Blanks
+4. Chunk (7)
+5. .map(join(week, ' '))
