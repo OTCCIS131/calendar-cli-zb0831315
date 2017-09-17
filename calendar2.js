@@ -17,10 +17,12 @@ for (const month of year.by('months'))
     let days = Array.from(month.range('month').by('days'))
     let paddedDays = _.map(days, day => {
         let date = day.date()
-        if(day.month() == 9 && day.date() == 10){
+        if(day.month() == 8 && day.date() == 9 + 1){
             date = chalk.red(date)
         }
-
+        if(day.month() == 9 && day.date() == 10 + 14){
+            date = chalk.blue(date)
+        }
         return _.padEnd(date, 2, ' ')
     })
     console.log(paddedDays)
